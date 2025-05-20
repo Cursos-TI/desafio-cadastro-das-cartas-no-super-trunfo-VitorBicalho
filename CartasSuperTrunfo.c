@@ -3,16 +3,16 @@
 #include <time.h>
 
 int main() {
-    // Variáveis para armazenar os dados inseridos pelo usuário
-    char estado1[10], estado2[]= 'PR', nome_cidade1[50], nome_cidade2[]= 'Curitiba';   
+    srand(time(0));
+     // Variáveis para armazenar os dados inseridos pelo usuário
+    char estado1[10], estado2[20]= "PR", nome_cidade1[50], nome_cidade2[20]= "Curitiba";   
     unsigned int carta1 = 1, carta2 = 2, ponto_turistico1, ponto_turistico2 = rand()% 10 + 1, comparacaoCartas;
     float populacao1, area1, pib1;
     float populacao2 = (rand()% 9000000) / 1000.0 + 1000, area2 = (rand()% 95000)/ 100.0 + 50, pib2 = (rand()% 4001)/ 10.0 + 10;
-    srand(time(0));
 
     //Coleta de dados do usuário
     printf("Digite as letras do estado 1: ");
-    scanf("%s", &estado1);
+    scanf("%s", estado1);
 
     printf("Digite o nome da cidade 1: ");
     scanf("%s", nome_cidade1);
@@ -90,8 +90,10 @@ int main() {
    printf("2.Área\n");
    printf("3.PIB\n");
    printf("4.Número de pontos turísticos\n");
-   printf("5.Densidade demográfica");
-   scanf("%d", &comparacaoCartas);
+   printf("5.Densidade demográfica\n");
+   printf("Esperando entrada do atributo...\n");
+scanf("%d", &comparacaoCartas);
+printf("Você escolheu: %d\n", comparacaoCartas);
 
    switch (comparacaoCartas)
    {
