@@ -84,20 +84,20 @@ int main() {
    }
    */
 
-   printf("Comparação De Cartas\n");
-   printf("Escolha um atributo: \n");
-   printf("1.População\n");
-   printf("2.Área\n");
-   printf("3.PIB\n");
-   printf("4.Número de pontos turísticos\n");
-   printf("5.Densidade demográfica\n");
-   printf("Esperando entrada do atributo...\n");
-scanf("%d", &comparacaoCartas);
-printf("Você escolheu: %d\n", comparacaoCartas);
+    printf("Comparação De Cartas\n");
+    printf("Escolha um atributo: \n");
+    printf("1.População\n");
+    printf("2.Área\n");
+    printf("3.PIB\n");
+    printf("4.Número de pontos turísticos\n");
+    printf("5.Densidade demográfica\n");
+    printf("Esperando entrada do atributo...\n");
+    scanf("%d", &comparacaoCartas);
+    printf("Você escolheu: %d\n", comparacaoCartas);
 
-   switch (comparacaoCartas)
-   {
-   case 1:
+    switch (comparacaoCartas)
+    {
+    case 1:
           printf("%s(%s) VS %s(%s)\n", nome_cidade1, estado1, nome_cidade2, estado2);
           printf("Atributo População\n");
           printf("%s: %.3f habitantes - %s: %3f habitantes\n", nome_cidade1, populacao1, nome_cidade2, populacao2);
@@ -109,7 +109,7 @@ printf("Você escolheu: %d\n", comparacaoCartas);
           } else {
                printf("Empate!\n");
           }
-     break;
+        break;
     case 2: 
           printf("%s(%s) VS %s(%s)\n", nome_cidade1, estado1, nome_cidade2, estado2);
           printf("Atributo Área\n");
@@ -122,8 +122,8 @@ printf("Você escolheu: %d\n", comparacaoCartas);
           } else {
                printf("Empate!\n");
           } 
-     break; 
-     case 3:
+        break; 
+    case 3:
           printf("%s(%s) VS %s(%s)\n", nome_cidade1, estado1, nome_cidade2, estado2);
           printf("Atributo PIB\n");
           printf("%s: %.1f bilhões - %s: %.1f bilhões\n", nome_cidade1, pib1, nome_cidade2, pib2);
@@ -135,8 +135,8 @@ printf("Você escolheu: %d\n", comparacaoCartas);
           } else {
                printf("Empate!\n");
           } 
-     break;
-     case 4:
+        break;
+    case 4:
           printf("%s(%s) VS %s(%s)\n", nome_cidade1, estado1, nome_cidade2, estado2);
           printf("Atributo Pontos Turísticos\n");
           printf("%s: %d - %s: %d\n", nome_cidade1, ponto_turistico1, nome_cidade2, ponto_turistico2);
@@ -148,8 +148,8 @@ printf("Você escolheu: %d\n", comparacaoCartas);
           } else {
                printf("Empate!\n");
           }
-     break;
-     case 5:
+        break;
+    case 5:
           printf("%s(%s) VS %s(%s)\n", nome_cidade1, estado1, nome_cidade2, estado2);
           printf("Atributo Densidade Demográfica\n");
           printf("%s: %.2f - %s: %.2f\n", nome_cidade1, densidadepop1, nome_cidade2, densidadepop2);
@@ -161,11 +161,11 @@ printf("Você escolheu: %d\n", comparacaoCartas);
           } else {
                printf("Empate!\n");
           }
-     break;
+        break;
    default:
           printf("Atributo inválido");
           
-     break;
+        break;
    }
 
    
